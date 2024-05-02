@@ -48,6 +48,35 @@
             font-size: 18px;
         }
 
+        .accordion-item {
+            margin-bottom: 20px;
+        }
+
+        .accordion-item-title {
+            cursor: pointer;
+            font-weight: bold;
+            background-color: #ffffff;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .accordion-item-title:hover {
+            background-color: #f8f9fa;
+        }
+
+        .accordion-item-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+        }
+
+        .accordion-item-content.show {
+            display: block;
+        }
+
         .logout-item {
             margin-top: auto;
             padding: 10px 20px;
@@ -98,6 +127,52 @@
                 <div class="widget-content">9 000</div>
             </div>
         </div>
+
+        <!-- Аккордеон для ближайших процедур -->
+        <div class="accordion-item">
+            <div class="accordion-item-title" data-toggle="collapse" data-target="#procedureAccordion"
+                aria-expanded="true" aria-controls="procedureAccordion">
+                <i class="fas fa-syringe"></i> Ближайшие процедуры
+            </div>
+            <div id="procedureAccordion" class="accordion-item-content collapse show">
+                <div class="widget">
+                    <div class="widget-title">Процедура 1</div>
+                    <div class="widget-content">Описание процедуры 1</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">Процедура 2</div>
+                    <div class="widget-content">Описание процедуры 2</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">Процедура 3</div>
+                    <div class="widget-content">Описание процедуры 3</div>
+                </div>
+                <!-- Добавьте больше элементов в виде виджетов при необходимости -->
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-item-title" data-toggle="collapse" data-target="#recordingAccordion"
+                aria-expanded="true" aria-controls="recordingAccordion">
+                <i class="fas fa-syringe"></i> Ближайшие записи
+            </div>
+            <div id="recordingAccordion" class="accordion-item-content collapse show">
+                <div class="widget">
+                    <div class="widget-title">Процедура 1</div>
+                    <div class="widget-content">Описание процедуры 1</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">Процедура 2</div>
+                    <div class="widget-content">Описание процедуры 2</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">Процедура 3</div>
+                    <div class="widget-content">Описание процедуры 3</div>
+                </div>
+                <!-- Добавьте больше элементов в виде виджетов при необходимости -->
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
